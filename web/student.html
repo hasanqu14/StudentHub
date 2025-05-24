@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .academic-levels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.level-card {
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: background 0.3s ease;
+}
+
+.level-card:hover {
+    background: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Student</h1>
+                <img src="student.jpeg" alt="Background Image" style="width: 100vw; height: 100vh; object-fit: cover; position: fixed; top: 0; left: 0; z-index: -1;">
+
+        <div id="menuContent">
+            <h2>Student Menu</h2>
+            <div class="academic-levels">
+                <a href="view_result_student.html" class="level-card">🎖️ View Result</a>
+                <a href="view_schedule_student.html" class="level-card">🕐 View Schedule</a>
+                <a href="mark_attendance.html" class="level-card"> ✅ Mark Your Attendance</a></div>
+        </div>
+    </div>
+    
+</body>
+</html>

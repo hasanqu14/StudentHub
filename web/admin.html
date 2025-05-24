@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+                 .academic-levels {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+         .level-card {
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 20px;
+            transition: background 0.3s ease;
+        }
+        .level-card:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Admin</h1>
+        <div id="menuContent">
+            <h2>Admin Menu</h2>
+                   <div class="academic-levels">
+
+                <a href="manage_institute_admin.html" class="level-card">🏫 Manage Institute Details</a>
+            <a href="view_all_students.html" class="level-card">🧑‍🎓View All Students</a>
+            <a href="view_all_teacher.html" class="level-card">🧑‍🏫 View All Teachers</a>           
+        </div>
+    </div>
+</body>
+</html>

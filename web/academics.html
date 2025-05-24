@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Insight's School & College</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .academic-levels {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .level-card {
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 20px;
+            transition: background 0.3s ease;
+        }
+        .level-card:hover {
+            background: #0056b3;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .back-btn:hover {
+            background: #218838;
+        }
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;  /* Ensure the page height takes up 100% of the viewport */
+    margin: 0;     /* Remove default margin */
+    padding: 0;    /* Remove default padding */
+    overflow: hidden; /* Hide the scrollbar */
+}
+
+.slideshow {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: slide 15s infinite;
+    z-index: -1; /* Ensure slideshow is below the content */
+}
+
+@keyframes slide {
+    0% { background-image: url('image1.jpg'); }
+    33% { background-image: url('image2.jpg'); }
+    66% { background-image: url('image3.jpg'); }
+    100% { background-image: url('image4.jpg'); }
+}
+
+    </style>
+</head>
+<body>
+<div class="slideshow">
+    <div class="container">
+        <h1>Our Academic Programs</h1>
+        <p>At Insight’s School & College, we offer a diverse and structured curriculum designed to foster critical thinking, creativity, and a love for learning. Our programs prepare students for success in higher education and beyond.</p>
+        
+        <div class="academic-levels">
+            <a href="primary.html" class="level-card">📚 Primary School</a>
+            <a href="secondary.html" class="level-card">🏫 Secondary School</a>
+            <a href="higher.html" class="level-card">🎓 Higher Education</a>
+        
+        </div>
+
+        <a href="index.html" class="back-btn">🏠 Back to Home</a>
+    </div>
+   </div>
+</body>
+</html>

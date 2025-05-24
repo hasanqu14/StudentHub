@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Results</title>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2>View Results</h2>
+    <form id="filterForm">
+        <label for="subject">Select Subject:</label>
+        <select id="subject" name="subject">
+            <option value="All">All Subjects</option>
+        
+        </select>
+
+        <label for="student">Select Student:</label>
+        <select id="student" name="student">
+            <option value="All">All Students</option>
+         
+        </select>
+
+        <button type="submit">Filter</button>
+    </form>
+
+    <div id="resultsContainer">
+        <!-- The results table will be inserted here -->
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#filterForm").submit(function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "ResultsServlet",
+                    type: "GET",
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        $("#resultsContainer").html(response);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+.signup-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-section .button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 80%;
+    text-align: center;
+}
+
+.signup-section .google-signup {
+    background: #db4437;
+}
+
+.signup-section .mobile-signup {
+    background: #17a2b8;
+}
+
+.signup-section .button:hover {
+    opacity: 0.9;
+}
+
+.forgot-password {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.menu-link {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #28a745;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}

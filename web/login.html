@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;  /* Ensure the page height takes up 100% of the viewport */
+    margin: 0;     /* Remove default margin */
+    padding: 0;    /* Remove default padding */
+    overflow: hidden; /* Hide the scrollbar */
+}
+
+.slideshow {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: slide 15s infinite;
+    z-index: -1; /* Ensure slideshow is below the content */
+}
+
+@keyframes slide {
+    0% { background-image: url('image1.jpg'); }
+    33% { background-image: url('image2.jpg'); }
+    66% { background-image: url('image3.jpg'); }
+    100% { background-image: url('image4.jpg'); }
+}
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+    <div class="container">
+        <div class="form-container">
+            <h1>Welcome to INSIGHT'S StudentHub</h1>
+            <p>Please Login or Sign Up to continue</p>
+            
+            <!-- Login Form -->
+            <form action="login" method="POST">
+                <h2>Login</h2>
+                <label for="login-method">Login with:</label>
+                <select id="login-method" name="login_method">
+                    <option value="email">Email</option>
+                </select>
+                   <input type="text" name="name" placeholder="Name" required>
+                <input type="email" id="email-field" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <select name="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button type="submit">Login</button>
+                <a href="signup.html" class="btn">Signup</a>
+                
+            </form>
+        </div>
+    </div>
+        </div>
+</body>
+</html>

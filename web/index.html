@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Insight's School & College</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Slideshow Section */
+        .slideshow {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            animation: slide 15s infinite;
+            z-index: -1; /* Ensure slideshow is below the content */
+        }
+
+        @keyframes slide {
+            0% { background-image: url('image1.jpg'); }
+            33% { background-image: url('image2.jpg'); }
+            66% { background-image: url('image3.jpg'); }
+            100% { background-image: url('image4.jpg'); }
+        }
+
+        /* Overlay for text content */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .content {
+            text-align: center;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .login-btn {
+            background-color: #007bff;
+        }
+
+        .signup-btn {
+            background-color: #28a745;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .signup-btn:hover {
+            background-color: #218838;
+        }
+
+        /* About Section */
+        .about-section {
+            text-align: center;
+            padding: 50px;
+            background: #f9f9f9;
+            position: relative; /* Ensures this section appears below the slideshow */
+        }
+
+        .about-section h2 {
+            font-size: 30px;
+            color: #333;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            margin: 20px auto;
+            max-width: 800px;
+            color: #555;
+        }
+
+        .about-links {
+            margin-top: 20px;
+        }
+
+        .about-links a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .about-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow">
+        <div class="overlay">
+            <div class="content">
+                <h1>Welcome to Insight's School & College</h1>
+                <p>Empowering students and educators with a seamless digital experience.</p>
+                <div class="buttons">
+                    <a href="login.html" class="login-btn">Login</a>
+                    <a href="signup.html" class="signup-btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>About Insight's School & College</h2>
+        <p>Insight’s School & College is a leading institution dedicated to academic excellence, innovation, and character development. We provide a dynamic learning environment that prepares students for success in academics and beyond.</p>
+        <div class="about-links">
+            <a href="academics.html">📚 Academics</a>
+            <a href="admissions.html">📄 Admissions</a>
+            <a href="facilities.html">🏫 Facilities</a>
+            <a href="contact.html">📞 Contact Us</a>
+        </div>
+    </section>
+
+</body>
+</html>

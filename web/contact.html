@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Insight's School & College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-details {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.contact-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005
+
+</style>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Reach out to us for any inquiries.</p>
+
+        <div class="contact-details">
+            <h2>Our Address</h2>
+            <p>Insight's School & College,</p>
+            <p>123 Education Lane, Mumbai , Maharashtra - 400043 , India</p>
+            <p>Email: <a href="mailto:info@insightschool.edu">info@insightschool.edu</a></p>
+            <p>Phone: +91 12345 67890</p>
+            ,<p>Office Hours: Monday - Thursday , 11:00 AM - 4:00 PM</p>
+            <p>Office Hours: Friday - Saturday , 11:00 - 1:00 PM </p>
+        </div>
+
+        <h2>Send Us a Message</h2>
+        <form action="contact_process.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+ 
+    </div>
+</body>
+</html>

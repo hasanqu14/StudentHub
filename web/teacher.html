@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .academic-levels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.level-card {
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: background 0.3s ease;
+}
+
+.level-card:hover {
+    background: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="teacher.jpg" alt="Background Image" style="width: 100vw; height: 100vh; object-fit: cover; position: fixed; top: 0; left: 0; z-index: -1;">
+
+        <h1>Welcome, Teacher</h1>
+        <div id="menuContent">
+            <h2>Teacher Menu</h2>
+            <div class="academic-levels">
+                <a href="add_result.html" class="level-card">🎖️Add Result</a>
+            <a href="view_schedule.html" class="level-card">⏰View Schedule</a>
+            <a href="send_otp.html" class="level-card"> 📩 Send OTP to Student</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
